@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Articles All-in-One</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="header">
+        <h1>Articles</h1>
+    </div>
+
+    <div class="container d-flex flex-row justify-content-around">
+        <div class="card p-3 m-2 d-flex flex-column" onclick="showSection('technology')">
+            <img src="https://assets.ccbp.in/frontend/static-website/articles-technology-icon-img.png" alt="Technology" />
+            <p>Technology</p>
+        </div>
+        <div class="card p-3 m-2 d-flex flex-column" onclick="showSection('science')">
+            <img src="https://assets.ccbp.in/frontend/static-website/articles-science-icon-img.png" alt="Science" />
+            <p>Science</p>
+        </div>
+        <div class="card p-3 m-2 d-flex flex-column" onclick="showSection('healthcare')">
+            <img src="https://assets.ccbp.in/frontend/static-website/articles-healthcare-icon-img.png" alt="Health Care" />
+            <p>Health Care</p>
+        </div>
+        <div class="card p-3 m-2 d-flex flex-column" onclick="showSection('business')">
+            <img src="https://assets.ccbp.in/frontend/static-website/articles-business-icon-img.png" alt="Business" />
+            <p>Business</p>
+        </div>
+    </div>
+
+    <div class="container mt-4">
+        <!-- Technology Section -->
+        <div id="section-technology" class="section-content d-none">
+            <h2>Technology Articles</h2>
+            <div id="techCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-technology-c1-img.png" class="d-block w-100" alt="Tech 1" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-technology-c2-img.png" class="d-block w-100" alt="Tech 2" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-technology-c3-img.png" class="d-block w-100" alt="Tech 3" />
+                    </div>
+                </div>
+            </div>
+            <ul class="mt-4">
+                <li>Latest AI innovations</li>
+                <li>Blockchain in Tech</li>
+                <li>Cybersecurity Trends</li>
+            </ul>
+        </div>
+
+        <!-- Science Section -->
+        <div id="section-science" class="section-content d-none">
+            <h2>Science Articles</h2>
+            <div id="scienceCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-science-c1-img.png" class="d-block w-100" alt="Science 1" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-science-c2-img.png" class="d-block w-100" alt="Science 2" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-science-c3-img.png" class="d-block w-100" alt="Science 3" />
+                    </div>
+                </div>
+            </div>
+            <ul class="mt-4">
+                <li>Space Exploration</li>
+                <li>Quantum Physics</li>
+                <li>Biological Discoveries</li>
+            </ul>
+        </div>
+
+        <!-- Health Care Section -->
+        <div id="section-healthcare" class="section-content d-none">
+            <h2>Health Care Articles</h2>
+            <div id="healthCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-healthcare-c1-img.png" class="d-block w-100" alt="Health 1" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-healthcare-c2-img.png" class="d-block w-100" alt="Health 2" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-healthcare-c3-img.png" class="d-block w-100" alt="Health 3" />
+                    </div>
+                </div>
+            </div>
+            <ul class="mt-4">
+                <li>Nutrition Tips</li>
+                <li>Medical Breakthroughs</li>
+                <li>Mental Health Awareness</li>
+            </ul>
+        </div>
+
+        <!-- Business Section -->
+        <div id="section-business" class="section-content d-none">
+            <h2>Business Articles</h2>
+            <div id="businessCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-business-c1-img.png" class="d-block w-100" alt="Business 1" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-business-c2-img.png" class="d-block w-100" alt="Business 2" />
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://assets.ccbp.in/frontend/static-website/articles-business-c3-img.png" class="d-block w-100" alt="Business 3" />
+                    </div>
+                </div>
+            </div>
+            <ul class="mt-4">
+                <li>Stock Market Trends</li>
+                <li>Startup Ecosystem</li>
+                <li>Global Economy</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
